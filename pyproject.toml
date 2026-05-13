@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-prompt-injection-firewall-mcp"
+version = "1.0.1"
+description = "The WAF for agents. Pattern-based + heuristic firewall scans prompts, RAG documents, tool arguments, A2A payloads for OWASP LLM01 prompt injection BEFORE they reach a downstream agent. Curated from OWASP + academia + production incidents."
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "MEOK AI Labs", email = "hello@meok.ai"}]
+keywords = ['mcp', 'a2a', 'prompt-injection', 'owasp-llm01', 'firewall', 'waf-for-agents', 'safety', 'eu-ai-act-art-15', 'cybersecurity', 'signed-attestation', 'meok-ai-labs']
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Topic :: Security"]
+dependencies = ["mcp>=1.0.0"]
+
+[project.urls]
+Homepage = "https://meok.ai/agent-prompt-injection-firewall-mcp"
+Repository = "https://github.com/meok-ai-labs/agent-prompt-injection-firewall-mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+only-include = ["server.py"]
+
+[project.scripts]
+agent-prompt-injection-firewall-mcp = "server:main"
