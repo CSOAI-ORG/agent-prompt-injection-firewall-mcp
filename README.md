@@ -1,6 +1,6 @@
 # Agent Prompt Injection Firewall MCP
 
-[![PyPI](https://img.shields.io/pypi/v/agent-prompt-injection-firewall-mcp)](https://pypi.org/project/agent-prompt-injection-firewall-mcp/) [![Python](https://img.shields.io/pypi/pyversions/agent-prompt-injection-firewall-mcp)](https://pypi.org/project/agent-prompt-injection-firewall-mcp/)
+[![PyPI](https://img.shields.io/pypi/v/agent-prompt-injection-firewall-mcp)](https://pypi.org/project/agent-prompt-injection-firewall-mcp/) [![Python](https://img.shields.io/pypi/pyversions/agent-prompt-injection-firewall-mcp)](https://pypi.org/project/agent-prompt-injection-firewall-mcp/) [![MCPize](https://img.shields.io/badge/MCPize-Available-blue)](https://mcpize.com)
 
 
 **WAF for AI agents — block prompt injection before it reaches the LLM**
