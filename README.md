@@ -68,3 +68,5 @@ The EU AI Act (Aug 2026), DORA (live), ISO 42001, and OWASP LLM01 Top-10 all dem
 ## License
 
 MIT — MEOK AI Labs, 2026.
+
+<!-- mcp-name: io.github.CSOAI-ORG/agent-prompt-injection-firewall-mcp -->
