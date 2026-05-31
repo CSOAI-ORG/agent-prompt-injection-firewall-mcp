@@ -1,72 +1,78 @@
 # Agent Prompt Injection Firewall MCP
 
-[![PyPI](https://img.shields.io/pypi/v/agent-prompt-injection-firewall-mcp)](https://pypi.org/project/agent-prompt-injection-firewall-mcp/) [![Python](https://img.shields.io/pypi/pyversions/agent-prompt-injection-firewall-mcp)](https://pypi.org/project/agent-prompt-injection-firewall-mcp/) [![MCPize](https://img.shields.io/badge/MCPize-Available-blue)](https://mcpize.com)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/agent_prompt_injection_firewall_mcp/)
 
+> AI agent prompt injection firewall MCP
 
-**WAF for AI agents — block prompt injection before it reaches the LLM**
+AI agent prompt injection firewall MCP. OWASP LLM Top 10 #1 runtime guard. MIT
 
-Agents that blindly forward user input + retrieved documents to other agents are the #1 production AI vulnerability (OWASP LLM01). This MCP is the pre-flight gate.
+---
 
-By [MEOK AI Labs](https://meok.ai).
-
-
-## Quick Install
-
-| Client | Install |
-|--------|---------|
-| **Claude Desktop** | [![Install in Claude](https://img.shields.io/badge/Install-Claude-blue)](https://claude.ai) |
-| **Cursor** | [![Install in Cursor](https://img.shields.io/badge/Install-Cursor-black)](https://cursor.com) |
-| **VS Code** | [![Install in VS Code](https://img.shields.io/badge/Install-VS_Code-blue)](https://code.visualstudio.com) |
-| **Windsurf** | [![Install in Windsurf](https://img.shields.io/badge/Install-Windsurf-purple)](https://codeium.com/windsurf) |
-| **Docker** | `docker run -p 8000:8000 agent-prompt-injection-firewall-mcp` |
-| **pip** | `pip install agent-prompt-injection-firewall-mcp` |
-
-## Install
+## 🚀 Quick Start
 
 ```bash
-pip install agent-prompt-injection-firewall-mcp
+# Install via pip
+pip install agent_prompt_injection_firewall_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install agent-prompt-injection-firewall-mcp --client claude
 ```
 
-## Tools
+## ✨ Features
 
-- `scan_prompt`
-- `define_custom_rule`
-- `list_rules`
-- `scan_log`
-- `sign_firewall_attestation`
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Claude Desktop
+## 📖 Documentation
 
-```json
-{
-  "mcpServers": {
-    "agentpromptinjectionfirewall": { "command": "agent-prompt-injection-firewall-mcp" }
-  }
-}
-```
+- [Full Documentation](https://docs.meok.ai/agent-prompt-injection-firewall-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## Tiers
+## 🛡️ Compliance
 
-- **Free** — generous daily limit (100-1,000 depending on operation)
-- **Pro £199/mo** — unlimited + signed HMAC attestations with public verify URLs — [subscribe](https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836)
-- **Enterprise £1,499/mo** — multi-tenant + custom predicate DSL + SIEM webhook push — [subscribe](https://buy.stripe.com/4gM9AV80kaEG0ZT42k8k837)
+This MCP server is built with **EU AI Act compliance** built-in:
 
-## Why this exists
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-The EU AI Act (Aug 2026), DORA (live), ISO 42001, and OWASP LLM01 Top-10 all demand runtime controls for agent systems — not just deployment-time audits. This MCP is that runtime control layer, emitting cryptographically signed evidence your auditor accepts.
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-## Related MEOK A2A MCPs
+## 🏢 Enterprise
 
-- [`agent-policy-enforcement-mcp`](https://pypi.org/project/agent-policy-enforcement-mcp/) — per-pair IAM
-- [`agent-handoff-certified-mcp`](https://pypi.org/project/agent-handoff-certified-mcp/) — signed delegation chain
-- [`agent-prompt-injection-firewall-mcp`](https://pypi.org/project/agent-prompt-injection-firewall-mcp/) — prompt injection WAF
-- [`agent-rate-limiter-mcp`](https://pypi.org/project/agent-rate-limiter-mcp/) — fleet-wide quota
-- [`agent-audit-logger-mcp`](https://pypi.org/project/agent-audit-logger-mcp/) — hash-chained signed log
-- [`a2a-governance-bridge-mcp`](https://pypi.org/project/a2a-governance-bridge-mcp/) — map A2A to compliance frameworks
-- [`meok-attestation-verify`](https://pypi.org/project/meok-attestation-verify/) — independent cert verifier
+Need custom development, SLA guarantees, or white-label deployment?
 
-## License
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-MIT — MEOK AI Labs, 2026.
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-<!-- mcp-name: io.github.CSOAI-ORG/agent-prompt-injection-firewall-mcp -->
+## 🤝 Part of the MEOK Ecosystem
+
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
+
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
+
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
